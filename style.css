@@ -1,0 +1,44 @@
+.pod { fill: #005; }
+.cable { stroke: #aaa; stroke-width: 1px; }
+.host { fill: #500; }
+
+svg.main { display: block; margin: auto; z-index: -1; }
+
+div.control {
+    position: absolute;
+    right: .1in;
+    left: .1in;
+    width: 2in;
+    padding-top: .1in;
+    padding-bottom: .1in;
+    padding-left: .15in;
+    margin-right: .1in;
+    background: #eee;
+    font-size: .13in;
+}
+
+form ul {
+    list-style-type:none;
+    margin: .1in;
+    padding: 0;
+}
+
+form ul li {
+    margin-left: 1in;
+    padding-bottom: .01in;
+    line-height: .23in;
+}
+
+form input[type="text"] {
+    width: .3in;
+    border: 1px solid #ccc;
+    font-size: .13in;
+}
+
+form span.f {
+    margin-left: -1.1in;
+    width: 1in;
+    text-align: right;
+    padding-right: .05in;
+    float: left;
+}
