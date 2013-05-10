@@ -48,3 +48,9 @@ form span.f {
     padding-right: .05in;
     float: left;
 }
+
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+div.comment { color: #666; text-align: center; margin-right: .1in; }
+div.comment a { color: #66c; }
+
