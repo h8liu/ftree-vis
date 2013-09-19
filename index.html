@@ -3,26 +3,30 @@
 <head>
 <meta charset="utf-8">
 <link href="style.css" rel="stylesheet" type="text/css" media="screen">
-<script language="javascript" type="text/javascript" src="lib/jquery.js"></script>
-<script language="javascript" type="text/javascript" src="lib/d3.js"></script>
-<script language="javascript" type="text/javascript" src="ftree.js"></script>
 <title>Fat Tree Visualizer</title>
 </head>
 
 <body>
-    <div class="control">
-        <form>
-            <ul>
-                <li><span class="f">Tree Depth</span> <input type="text" name="depth" value="3"/></li>
-                <li><span class="f">Ports per Switch</span> <input type="text" name="width" value="16"/></li>
-                <li><span class="f">Hosts</span> <span id="nhost"></span></li>
-                <li><span class="f">Switches</span> <span id="nswitch"></span></li>
-                <li><span class="f">Cables</span> <span id="ncable"></span></li>
-                <li><span class="f">Transmitters</span> <span id="ntx"></span></li>
-                <li><span class="f">Switch Tx's</span> <span id="nswtx"></span></li>
-            </ul>
-        </form>
-        <div class="comment">Fat Tree Visualizer <br/> by <a href="mailto:h8liu@cs.ucsd.edu">He "Lonnie" Liu</a></div>
-    </div>
+
+<div class="control">
+    <form>
+        <ul>
+            <li><span class="f">Tree Depth</span> <input type="text" name="depth" value="3"/></li>
+            <li><span class="f">Ports per Switch</span> <input type="text" name="width" value="16"/></li>
+            <li><span class="f">Hosts</span> <span id="nhost"></span></li>
+            <li><span class="f">Switches</span> <span id="nswitch"></span></li>
+            <li><span class="f">Cables</span> <span id="ncable"></span></li>
+            <li><span class="f">Transmitters</span> <span id="ntx"></span></li>
+            <li><span class="f">Switch Tx's</span> <span id="nswtx"></span></li>
+        </ul>
+    </form>
+    <div class="comment">Fat Tree Visualizer <br/> by <a href="http://cseweb.ucsd.edu/~h8liu">He "Lonnie" Liu</a></div>
+</div>
+
+<script language="javascript" type="text/javascript" src="lib/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="lib/d3.js"></script>
+<script language="javascript" type="text/javascript" src="ftree.js"></script>
+
 </body>
 
+</html>
