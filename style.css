@@ -5,7 +5,7 @@ body, form input[type="text"] {
 }
 
 .pod { fill: #005; }
-.cable { stroke: #aaa; stroke-width: 1px; }
+.cable { stroke: #999; stroke-width: 1px; }
 .host { fill: #500; }
 
 svg.main { display: block; margin: auto; z-index: -1; }

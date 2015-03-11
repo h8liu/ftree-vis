@@ -4,9 +4,24 @@ var conf = new Object();
 conf['depth'] = 3;
 conf['width'] = 8;
 
+var controlVisible = true;
+
 function docMain() {
     formInit();
     redraw();
+    $(document).keypress(kpress);
+}
+
+function kpress(e) {
+    if (e.which == 104) { // 'h'
+        if (controlVisible) {
+            controlVisible = false;
+            $("div.control").hide();
+        } else {
+            controlVisible = true;
+            $("div.control").show();
+        }
+    }
 }
 
 function redraw() {
@@ -15,14 +30,14 @@ function redraw() {
 
 function drawFatTree(depth, width) {
     var k = Math.floor(width / 2);
-    var padg = 20;
-    var padi = 16;
+    var padg = 13;
+    var padi = 12;
     var hline = 70;
     var hhost = 50;
 
-    var podw = 6;
-    var podh = 6;
-    var hostr = 3;
+    var podw = 8;
+    var podh = 8;
+    var hostr = 2;
 
     var kexp = function (n) { return Math.pow(k, n); };
 
